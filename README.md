@@ -13,3 +13,6 @@ Will update with fix when I get it.
 Run with:
 
 python mlturn1a1ssa.py
+
+
+The directory in this repo is the output of a run, it can be deleted, or not, for re-run.
