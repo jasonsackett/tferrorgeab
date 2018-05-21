@@ -8,3 +8,8 @@ but returns:
 tensorflow.python.framework.errors_impl.InternalError: Unable to get element as bytes.
 
 Will update with fix when I get it.
+
+
+Run with:
+
+python mlturn1a1ssa.py
