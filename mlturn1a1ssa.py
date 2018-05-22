@@ -74,9 +74,11 @@ def prepare_data(g):
         df0 = pd.read_pickle(pklfname)
     rows = df0.shape[0]
     print('rows '+str(rows))
+    print(str(g.all_feature_names))
     dfin = df0.iloc[0:rows - g.eval_size]
     print('len dfin '+str(len(dfin)))
-    g.train_data = dfin.values
+    g.train_data = dfin.drop(columns=['ctags', 'ltags', 't']).values
+    print('train data '+str(g.train_data))
     print('train data values size ', g.train_data.shape)
     print(str(g.train_data[0]))
     g.train_labels = dfin['t'].values
