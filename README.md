@@ -28,3 +28,7 @@ to this instead makes it run:
   
  so it is something with the dataframe .values transformation, 
  even though the data looks ok when printed.
+
+This simplified example did not exactly reflect my local issue, dropping columns like this does fix it (code is updated):
+
+g.train_data = dfin.drop(columns=['ctags', 'ltags', 't']).values
