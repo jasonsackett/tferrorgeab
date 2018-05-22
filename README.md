@@ -16,3 +16,15 @@ python mlturn1a1ssa.py
 
 
 The directory in this repo is the output of a run, it can be deleted, or not, for re-run.
+
+
+UPDATE: hardcoding the data in this line:
+
+  g.train_data = dfin.values
+
+to this instead makes it run:
+
+  g.train_data = np.array([[0]*4])
+  
+ so it is something with the dataframe .values transformation, 
+ even though the data looks ok when printed.
